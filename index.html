@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yagandla Nithin Goud | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+  --bg:#0f172a;
+  --card:#1e293b;
+  --text:#ffffff;
+  --accent:#38bdf8;
+}
+
+.light{
+  --bg:#f4f6f9;
+  --card:#ffffff;
+  --text:#111;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins;}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 50px;
+  position:sticky;
+  top:0;
+  background:var(--card);
+}
+
+nav a{
+  color:var(--text);
+  text-decoration:none;
+  margin:0 10px;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:80px 20px;
+  animation:fade 2s;
+}
+
+.hero img{
+  width:160px;
+  border-radius:50%;
+  border:4px solid var(--accent);
+}
+
+.hero h1{
+  font-size:40px;
+}
+
+.hero span{
+  color:var(--accent);
+}
+
+/* SECTIONS */
+section{
+  padding:60px 10%;
+}
+
+.card{
+  background:var(--card);
+  padding:25px;
+  border-radius:12px;
+  margin:20px 0;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+/* SKILLS */
+.skill{
+  margin:15px 0;
+}
+
+.bar{
+  height:10px;
+  background:#333;
+  border-radius:10px;
+}
+
+.progress{
+  height:10px;
+  background:var(--accent);
+  border-radius:10px;
+  width:0;
+  transition:2s;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:10px;
+}
+
+/* TIMELINE */
+.timeline{
+  border-left:3px solid var(--accent);
+  padding-left:20px;
+}
+
+.timeline div{
+  margin-bottom:20px;
+}
+
+/* BUTTON */
+.btn{
+  padding:10px 20px;
+  background:var(--accent);
+  border:none;
+  border-radius:6px;
+  color:white;
+  cursor:pointer;
+  text-decoration:none;
+}
+
+/* CONTACT */
+input,textarea{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border-radius:6px;
+  border:none;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+}
+
+@keyframes fade{
+  from{opacity:0;transform:translateY(40px);}
+  to{opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h3>Nithin Goud</h3>
+<div>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+<button onclick="toggleMode()">🌙</button>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<img src="https://drive.google.com/file/d/14FjyNAgGc5aPYhACj0k0H8f5uqPvPuYs/view?usp=drivesdk" alt="profile">
+<h1>Hi, I'm <span>Yagandla Nithin Goud</span></h1>
+<p>AI & ML Enthusiast | Full Stack Python Developer</p>
+<br>
+<a class="btn" href="https://drive.google.com/file/d/18-de4LJ2450tMZRjXCqr1M-DNhf48bdw/view?usp=drivesdk" download>Download Resume</a>
+</section>
+
+<!-- ABOUT -->
+<section>
+<div class="card">
+<h2>Professional Summary</h2>
+<p>
+Motivated Computer Science (AI & ML) student with strong problem-solving
+skills seeking an entry-level opportunity to apply programming and analytical skills.
+</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2>Skills</h2>
+
+<div class="skill">Python<div class="bar"><div class="progress" style="width:90%"></div></div></div>
+<div class="skill">SQL<div class="bar"><div class="progress" style="width:80%"></div></div></div>
+<div class="skill">Java<div class="bar"><div class="progress" style="width:70%"></div></div></div>
+<div class="skill">HTML/CSS<div class="bar"><div class="progress" style="width:85%"></div></div></div>
+
+</section>
+
+<!-- INTERNSHIP -->
+<section>
+<h2>Internship Experience</h2>
+
+<div class="card">
+<h3>AI & ML Intern — UptoSkills India</h3>
+<p>Built predictive ML models and achieved 92% efficiency using optimization techniques.</p>
+</div>
+
+<div class="card">
+<h3>Full Stack Python Intern</h3>
+<p>Developed responsive web applications with backend integration using Python & SQL.</p>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2>AI/ML Projects Showcase</h2>
+
+<div class="card">
+<h3>Liver Disease Prediction</h3>
+<p>Machine learning model with 92% accuracy using optimized preprocessing.</p>
+</div>
+
+<div class="card">
+<h3>AI Placement App</h3>
+<p>AI-based system matching students with jobs using skill-gap analysis.</p>
+</div>
+
+</section>
+
+<!-- GALLERY -->
+<section>
+<h2>Project Gallery</h2>
+<div class="gallery">
+<img src="project1.jpg">
+<img src="project2.jpg">
+<img src="project3.jpg">
+</div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section>
+<h2>Certifications</h2>
+<div class="card">AI & ML Internship Certificate — UptoSkills</div>
+<div class="card">Full Stack Python Internship Certificate</div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section>
+<h2>Achievements Timeline</h2>
+<div class="timeline">
+<div>🏆 Liver Disease Model — 92% Accuracy</div>
+<div>🏆 Top 10% Academic Rank</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact Me</h2>
+
+<form onsubmit="sendMail(event)">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Email" required>
+<textarea placeholder="Message"></textarea>
+<button class="btn">Send Message</button>
+</form>
+
+<br>
+<p>
+GitHub: <a href=https://github.com/Nithin45-45</a><br>
+LinkedIn: <a href="https://www.linkedin.com/in/yagandla-nithin-goud-747b16266">LinkedIn Profile</a>
+</p>
+
+</section>
+
+<footer>
+© 2026 Yagandla Nithin Goud | Portfolio
+</footer>
+
+<script>
+
+/* Dark Mode */
+function toggleMode(){
+ document.body.classList.toggle("light");
+}
+
+/* Contact UI */
+function sendMail(e){
+ e.preventDefault();
+ alert("Message Sent Successfully ✅ (Demo UI)");
+}
+
+</script>
+
+</body>
+</html>
